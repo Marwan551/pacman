@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SVG Pac-Man</title>
+</head>
+<body>
+  <svg id="game" width="400" height="400" viewBox="0 0 400 400">
+    <rect width="400" height="400" fill="black"/>
+    <g id="walls">
+      <rect x="0" y="0" width="400" height="20" fill="blue"/>
+      <rect x="0" y="380" width="400" height="20" fill="blue"/>
+      <rect x="0" y="0" width="20" height="400" fill="blue"/>
+      <rect x="380" y="0" width="20" height="400" fill="blue"/>
+    </g>
+    <g id="food"></g>
+    <g id="ghosts"></g>
+    <g id="pacman"></g>
+  </svg>
+  <div>Score: <span id="score">0</span></div>
+  <script src="game.js"></script>
+</body>
+</html>
