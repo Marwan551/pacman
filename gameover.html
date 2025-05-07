@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Over</title>
+</head>
+<body>
+    <h1>Game Over!</h1>
+    <p>Your final score: <span id="final-score">0</span></p>
+    <button onclick="restartGame()">Restart Game</button>
+
+    <script>
+        function restartGame() {
+            window.location.href = 'start.html';
+        }
+
+        // Display the final score from localStorage
+        document.getElementById('final-score').textContent = localStorage.getItem('score') || 0;
+    </script>
+</body>
+</html>
